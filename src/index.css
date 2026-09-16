@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --color-forest: #152A20;
+  --color-forest-dark: #0D1C15;
+  --color-forest-light: #233F31;
+  --color-cream: #FAF7F2;
+  --color-cream-card: #F4EFE6;
+  --color-cream-border: #E5DFD1;
+  --color-gold: #C5A059;
+  --color-gold-light: #E4CA92;
+  --color-gold-dark: #9A7B39;
+  --color-burgundy: #6B1D2F;
+  --color-burgundy-dark: #4D1220;
+  --color-walnut: #4A3728;
+  --color-charcoal: #1C1917;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #FAF7F2;
+  color: #1C1917;
+  overflow-x: hidden;
+}
+
+.font-serif-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-serif-playfair {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-sans-ui {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4EFE6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D2C7B4;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+/* Custom luxury parchment and gold glow effects */
+.shadow-parchment {
+  box-shadow: 0 4px 20px -2px rgba(35, 27, 18, 0.06), 0 1px 3px 0 rgba(35, 27, 18, 0.04);
+}
+
+.shadow-gold-subtle {
+  box-shadow: 0 4px 14px 0 rgba(197, 160, 89, 0.15);
+}
+
+.border-crisp {
+  border-width: 1px;
+  border-color: #E2DAC9;
+}
+
+/* Wax seal badge styling */
+.wax-seal {
+  background: radial-gradient(circle at 35% 35%, #8B263E, #581422);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Print payslip rules */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+
